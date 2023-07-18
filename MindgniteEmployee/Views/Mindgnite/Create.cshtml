@@ -3,13 +3,19 @@
 @{
     ViewData["Title"] = "Create";
 }
+<h4>Create New Employee</h4>
+<div class="card col-6">
+    <div class="card-header">
 
 <h1>Create</h1>
 
-<h4>MindgniteViewModel</h4>
+        </div>
+        
 <hr />
+    <div class="card-body">
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
+            
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -43,14 +49,16 @@
                 <span asp-validation-for="City" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary mt-2" />
             </div>
         </form>
+            </div>
     </div>
 </div>
 
-<div>
+<div class="card-footer">
     <a asp-action="Index">Back to List</a>
+</div>
 </div>
 
 @section Scripts {
